@@ -1,50 +1,20 @@
-class stadium
+class Stadium
 {
     String stadium_name, location,  pitch_size;
     int phone;
     int capacity;
 
-    void allstadiums()
+    void staduimdetails(String a,String b,String c)
     {
+        stadium_name =a;
+        location = b;
+        pitch_size = c;
 
-        //function to display stadiums in decreasing order of their capacity
-    
+        System.out.println("STADIUM NAME : "+stadium_name+"\nLOCATION :"+location+"\nPITCH SIZE :"+pitch_size);
     }
-}
-class team_details
-{
-    String teamname, logo_path; // array of objects for team
-
-    void teams()
+    public static void main(String args[])
     {
-        // print all teams using array of objects
+            Stadium S = new Stadium();
+            S.staduimdetails("MG ST","Cochin","1270x1680");
+
     }
-
-    void search_team()
-    {
-        // search for a team in array
-    }
-}
-class player_info
-{
-    String playername, age, curnt_team;
-    int wages;
-    float height, weight;
-
-    void playerinfo()
-    {
-        // displays details of selected player
-    }
-}
-
-class transfers
-{
-    
-}
-
-class salary
-{
-    int 
-}
-}
-
